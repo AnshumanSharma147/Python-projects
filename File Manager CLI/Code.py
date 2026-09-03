@@ -56,7 +56,7 @@ def operation_manage():
     choice=input("> ")
     print("which file would you like to edit: ")
     file_name=input("> ")
-    file_extension=file_name.split(".")[1]
+    file_extension=file_name.split(".")[-1]
 
     if choice.lower()=="read":
         read_rows(file_name,file_extension)
